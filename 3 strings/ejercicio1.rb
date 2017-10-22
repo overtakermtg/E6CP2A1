@@ -4,4 +4,15 @@
 # o string dado está contenido en éste.
 
 cadena = 'Hola Mundo!'
-caracter = 'o'
+caracter = 'x'
+
+
+def existe_dentro_cadena(cadena, caracter)
+	if cadena.include? caracter
+		print "El caracter: #{caracter}, existe dentro de la cadena: #{cadena}"
+	else
+		print "El caracter: #{caracter}, NO! existe dentro de la cadena: #{cadena}"
+	end
+end
+
+existe_dentro_cadena(cadena, caracter)

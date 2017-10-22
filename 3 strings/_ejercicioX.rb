@@ -6,10 +6,13 @@ song = 'la mar estaba serena, serena estaba la mar'
 # cambiando las todas las vocales por la vocal a, luego por e
 # seguido por el resto de las vocales
 
-vowels = %w(a e i o u)
-vowels.each do |vowel|
-  song.gsub!(/[aeiou]/, vowel)
-  #Descomentar línea 13 en OSx
-  `say "#{song}" -v diego`
-  p song
-end
+`say #{song} -v diego`
+
+# vowels = %w(a e i o u)
+# vowels.each do |vowel|
+#   song.gsub!(/[aeiou]/, vowel)
+#   #Descomentar línea 13 en OSx
+#   `say "#{song}" -v diego`
+#   p song
+# end
+
