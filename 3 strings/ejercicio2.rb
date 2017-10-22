@@ -19,7 +19,19 @@ arr = [ 'FELIPE ANTONIO QUINTEROS',
 
 def print_5(arr)
 	for value in arr
-		if len(value)
+		if value.size() > 5 
+			print value +"\n"
+		end
 	end
-	
 end
+
+def print_minus(arr)
+	arr2 = []
+	for value in arr
+		arr2 += [value.downcase()]
+	end
+	print arr2
+end
+
+print_5(arr)
+print_minus(arr)

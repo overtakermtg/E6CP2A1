@@ -6,3 +6,35 @@
 
 a = [1, 2, 3, 9, 12, 31, 'domingo']
 b = %w[lunes martes miércoles jueves viernes sábado domingo]
+
+def concatenar_array(arr1, arr2)
+	if arr1.size() >= arr2.size()
+		for idx in 0..(arr1.size()-1)
+			print arr2[idx].to_s + " " + arr1[idx].to_s + "\n"
+		end
+	end 
+end
+
+def union_array(arr1, arr2)
+	print arr1 | arr2
+end
+
+def interseccion_array(arr1, arr2)
+	print arr1 & arr2
+end
+
+def intercalar_array(arr1, arr2)
+	arrResult = []
+	if arr1.size() >= arr2.size()
+		for idx in 0..(arr1.size()-1)
+			arrResult += [[arr2[idx], arr1[idx]]]
+		end
+	end 
+	print arrResult
+end
+
+concatenar_array(a, b)
+union_array(a, b)
+interseccion_array(a, b)
+intercalar_array(a, b)
+
